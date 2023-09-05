@@ -1,0 +1,90 @@
+<!--Comentário-->
+<!--
+    O interpretador entende?
+-->
+
+<!--Definit o tipo do documento HTML-->
+<!DOCTYPE html> <!--digitação-->
+<html lang="pt-br"> <!-- Tag principal. Atributo "LANG" define o idioma-->
+
+
+
+<!--Estude a tag e seus atributos-->
+
+<!--Focar em tags de formulário caixinhas de texto com botões-->
+
+
+<!--Cabeçalho do site
+Padrões Web
+Normas
+Robô-->
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Gabarito 01 -Márcia</title>
+    <!--Colocar o icone do seu time preferido-->
+</head>
+
+<!--Corpo-->
+<body>
+    <!--Que começem os jogos!!!-->
+    Digite um número <input type="number" id="num1">
+    Digite outro número <input type="number" id="num2">
+    <!--onclick é uma ação (de clicar)-->
+    <button onclick="somar()"> Somar </button>
+    <button onclick="subtrair()">subtrair</button>
+    <button onclick="multiplicar()">multiplicar</button>
+    <button onclick="dividir()">dividir</button>
+    
+    <script>
+        function somar(){
+            // num1 é a variável
+            // erro: ao invés de somar esta concatenando
+            // só acontece com a soma?
+            // "+"
+            var num1 = Number.parseInt(document.getElementById ("num1").value)
+            // num2 é a variável
+            var num2 = Number.parseInt(document.getElementById ("num2").value)
+            
+            var soma = num1 + num2 // "+" é função de texto
+
+            alert (soma)
+        }
+
+        function subtrair(){
+
+            // num1 é a variável            
+            var num1 = Number.parseInt(document.getElementById ("num1").value)
+            // num2 é a variável
+            var num2 = Number.parseInt(document.getElementById ("num2").value)
+            
+            var sub = num1 - num2 
+
+            alert (sub)
+        }
+
+        function multiplicar(){
+
+            // num1 é a variável            
+            var num1 = Number.parseInt(document.getElementById ("num1").value)
+            // num2 é a variável
+            var num2 = Number.parseInt(document.getElementById ("num2").value)
+
+            var mult = num1 * num2 
+
+            alert (mult)
+        }
+
+        function dividir(){
+
+            // num1 é a variável            
+        var num1 = Number.parseInt(document.getElementById ("num1").value)
+        // num2 é a variável
+        var num2 = Number.parseInt(document.getElementById ("num2").value)
+
+        var div = num1 / num2 
+
+        alert (div)
+        }
+    </script>
+</body>
+</html>
